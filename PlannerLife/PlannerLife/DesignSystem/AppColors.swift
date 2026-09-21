@@ -26,4 +26,5 @@ enum AppColors {
 
     // Estado
     static let success = Color(red: 0.53, green: 0.94, blue: 0.67)          // #86efac
+    static let error = Color(red: 186 / 255, green: 72 / 255, blue: 6 / 255)
 }
