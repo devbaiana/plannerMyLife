@@ -11,7 +11,8 @@ import SwiftUI
 struct PlannerLifeApp: App {
     var body: some Scene {
         WindowGroup {
-            SignupView()
+            LoginView()
+                .debugMenu()
         }
     }
 }
