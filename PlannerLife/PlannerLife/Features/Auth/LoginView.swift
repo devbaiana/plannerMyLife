@@ -24,6 +24,7 @@ struct LoginView: View {
                     .foregroundStyle(AppColors.textSecondary)
             }
             .padding(AppSpacing.large)
+            .scrollableAndDismissesKeyboard()
         }
     }
 

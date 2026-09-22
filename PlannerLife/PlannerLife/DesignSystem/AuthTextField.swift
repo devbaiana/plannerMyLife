@@ -16,6 +16,7 @@ struct AuthTextField: View {
     @Binding var text: String
 
     @State private var isRevealed = false
+    @FocusState private var isFocused: Bool
 
     var body: some View {
         VStack(alignment: .leading, spacing: AppSpacing.small) {
@@ -50,13 +51,19 @@ struct AuthTextField: View {
 
     @ViewBuilder
     private var field: some View {
-        if isSecure && !isRevealed {
-            SecureField(placeholder, text: $text)
+        if isSecure {
+            SecureableTextField(
+                text: $text,
+                placeholder: placeholder,
+                isSecure: !isRevealed,
+                keyboardType: keyboardType
+            )
         } else {
             TextField(placeholder, text: $text)
                 .keyboardType(keyboardType)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
+                .focused($isFocused)
         }
     }
 }

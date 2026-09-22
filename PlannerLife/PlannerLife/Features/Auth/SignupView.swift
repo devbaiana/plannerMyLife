@@ -24,6 +24,7 @@ struct SignupView: View {
                     .foregroundStyle(AppColors.textSecondary)
             }
             .padding(AppSpacing.large)
+            .scrollableAndDismissesKeyboard()
         }
     }
     var header: some View {

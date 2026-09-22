@@ -44,9 +44,21 @@ Referência visual: [Figma — Personal Goals iOS App Design](https://www.figma.
 
 ### Backlog (fora do MVP)
 
+- **Ícone do app + Launch Screen** (adicionado em 2026-09-27): AppIcon (todos
+  os tamanhos, via Asset Catalog) e uma tela de inicialização simples
+  (`UILaunchScreen` no Info.plist, ou storyboard de launch). Vale encaixar
+  perto do fim do Módulo 1 ou início do Módulo 2 — cedo o bastante pra deixar
+  de parecer "projeto genérico" ao rodar no dispositivo.
 - Push remoto via APNs (curiosidades dinâmicas via servidor)
 - Suporte a iPad / layout adaptativo
 - Leitura do calendário nativo (hoje só escrita)
+- **Acessibilidade** (adicionado em 2026-09-22): passe dedicado de VoiceOver,
+  Dynamic Type e contraste sobre as telas já construídas — não só "não
+  quebrar", auditar de verdade.
+- **WidgetKit** (adicionado em 2026-09-22): widget de tela de bloqueio/home
+  mostrando progresso do dia (ex.: hábitos concluídos, água). Depende do
+  Módulo 3 (dados) e provavelmente do Módulo 4 (Metas) já existirem, porque
+  o widget só faz sentido com dado real pra mostrar.
 
 ## Histórias por módulo
 
